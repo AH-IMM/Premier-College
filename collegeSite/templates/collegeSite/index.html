@@ -2,15 +2,139 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="{% static 'collegeSite/styles/style.css' %}">
-</head>
-<body>
-    <h1>Create Navbar</h1>
-    <div class="container">hello</div>
-</body>
+    <!-- FontAwesome Icon Kit link -->
+    <script src="https://kit.fontawesome.com/6d7cea53e0.js"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="{% static 'collegeSite/styles/style.css' %}" /> -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .custom-dropdown {
+          display: none;
+        }
+        .custom-nav:hover > .custom-dropdown {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="border bg-blue-600 text-white flex justify-between items-center p-4"
+      >
+        <a href="#" class="px-3 py-2 rounded">Homepage </a>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Student Info Page <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-2 py-2 ml-auto mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Student List</a></div><hr>
+            <div class="py-2"><a href="">Scholarship Holder Student List</a></div><hr>
+            <div class="py-2"><a href="">Student Attendance</a></div>
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Teacher and Staff <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 ml-[1%] mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Teacher List</a></div><hr>
+            <div class="py-2"><a href="">Staff List</a></div><hr>
+            <div class="py-2"><a href="">Ex-Teacher Staff List</a></div><hr>
+            <div class="py-2"><a href="">Teacher Council Information</a></div><hr>
+            <div class="py-2"><a href="">Teacher and Staff Welfare Trust</a></div><hr>
+            <div class="py-2"><a href="">Vacant Post</a></div>
+            
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Academics <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">About Institute</a></div><hr>
+            <div class="py-2"><a href="">Governing Body</a></div><hr>
+            <div class="py-2"><a href="">Honor Board</a></div><hr>
+            <div class="py-2"><a href="">Campus Map</a></div><hr>
+            <div class="py-2"><a href="">Founder and Donor Information</a></div><hr>
+            <div class="py-2"><a href="">Academic Performance</a></div><hr>
+            <div class="py-2"><a href="">Number of seats</a></div><hr>
+            <div class="py-2"><a href="">Honor Board</a></div><hr>
+            <div class="py-2"><a href="">Land Information</a></div>
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Result <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Item</a></div><hr>
+            <div class="py-2"><a href="">Item 2</a></div><hr>
+            <div class="py-2"><a href="">Item 3</a></div>
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Notice <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Item</a></div><hr>
+            <div class="py-2"><a href="">Item 2</a></div><hr>
+            <div class="py-2"><a href="">Item 3</a></div>
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Photo Gallery <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Item</a></div><hr>
+            <div class="py-2"><a href="">Item 2</a></div><hr>
+            <div class="py-2"><a href="">Item 3</a></div>
+          </div>
+        </div>
+
+        <div class="custom-nav">
+          <a href="#" class="px-3 py-2 rounded"
+            >Routine <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <div
+            class="custom-dropdown absolute flex flex-col bg-white text-black w-auto px-10 py-2 mt-2 rounded-md bg-white shadow-lg"
+          >
+            <div class="py-2"><a href="">Item</a></div><hr>
+            <div class="py-2"><a href="">Item 2</a></div><hr>
+            <div class="py-2"><a href="">Item 3</a></div>
+          </div>
+        </div>
+
+        <a href="#" class="px-3 py-2 rounded">Admission </a>
+        <a href="#" class="px-3 py-2 rounded">Login </a>
+        <a href="#" class="px-3 py-2 rounded">Contact Us</a>
+      </nav>
+    </header>
+  </body>
 </html>
